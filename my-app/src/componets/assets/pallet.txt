@@ -1,0 +1,6 @@
+(15, 23, 42) - Dark Blue
+(15, 25, 49) - Slightly lighter Dark Blue
+(15, 24, 44) - Another variation of Dark Blue
+(16, 27, 53) - Another variation of Dark Blue
+(16, 24, 47) - Another variation of Dark Blue
+

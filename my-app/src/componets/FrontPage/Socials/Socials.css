@@ -1,0 +1,19 @@
+.Social-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.social-icon {
+    height: 25px;
+    width: auto; 
+    margin: 0 20px;
+    transition: filter 0.3s ease;
+}
+
+.social-icon:hover {
+    filter: brightness(1.5);
+}

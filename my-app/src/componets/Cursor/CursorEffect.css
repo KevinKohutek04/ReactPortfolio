@@ -1,0 +1,26 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(15, 23, 42);
+  }
+  
+  .cursor-circle {
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(circle, rgba(65, 105, 225, 0.12) 0%, rgba(65, 105, 225, 0.05) 40%, rgba(65, 105, 225, 0.01) 70%, rgba(65, 105, 225, 0.005) 100%);
+
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    
+    transition: width 0.3s ease, height 0.3s ease;
+
+    z-index: 9999;
+  pointer-events: none;
+  mix-blend-mode: difference   ; 
+  }
+  

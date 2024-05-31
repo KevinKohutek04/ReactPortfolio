@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.NamePlateBox {
+    color: rgb(219, 225, 234);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*opacity: .8;*/
+    height: 40%;
+    font-family: 'Roboto', sans-serif;
+}
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: -15px;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    color: rgb(141, 159, 185);
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
