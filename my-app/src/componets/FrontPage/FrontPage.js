@@ -20,10 +20,10 @@ const FrontPage = () => {
       <div className='RightBox'>
         <StoryBourd />
         <JobBourd />
-        <Spacer amount={2} />
+        <Spacer amount={1} />
       </div>
     </div>
   );
 };
-
+//edit 23 to 11
 export default FrontPage;
