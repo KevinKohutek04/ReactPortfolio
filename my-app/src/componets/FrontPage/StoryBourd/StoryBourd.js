@@ -30,4 +30,3 @@ const StoryBourd = () => {
   };
   
   export default StoryBourd;
-  /*titlep  subtitlep  descriptionp*/

@@ -29,4 +29,3 @@ const Project = ({ image, title, subtext, topic, link }) => {
 };
 
 export default Project;
-//descriptionp     

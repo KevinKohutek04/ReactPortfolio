@@ -11,7 +11,7 @@ const Socials = () => {
             <img src={code} alt="Code" className="social-icon" />
             <img src={github} alt="GitHub" className="social-icon" />
             <img src={gmail} alt="Gmail" className="social-icon" />
-            <img src={link} alt="LinkedIn" className="social-icon" /> {/* Corrected typo in the alt text */}
+            <img src={link} alt="LinkedIn" className="social-icon" />
         </div>
     );
 }
