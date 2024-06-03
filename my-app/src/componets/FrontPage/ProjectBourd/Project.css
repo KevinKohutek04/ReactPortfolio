@@ -9,6 +9,10 @@
     position: relative;
     padding-bottom: 15px;
 }
+.Project:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .ProjectLink {
     text-decoration: none;
     color: inherit;
@@ -26,6 +30,7 @@
     width: 80%;
 }
 img {
+    margin-top: 10px;
     max-width: 100%;
     height: auto;
     opacity: 1;
@@ -35,4 +40,19 @@ img {
 img.no-blur {
     filter: none !important;
     transition: none !important;
+}
+.ProjectImg {
+    border: 2px solid rgb(78, 86, 101);
+    border-radius: 2px;
+    width: 80%;
+}
+.Project:hover .ProjectImg {
+    border: 2px solid rgb(118, 126, 141);
+    transition: border-color 0.1s ease 0.1s;
+}
+.Project:hover .TypeCircle {
+    background-color: rgb(10, 35, 54);
+}
+.Project:hover .ArrowIcon {
+    transform: translate(5px, -5px);
 }

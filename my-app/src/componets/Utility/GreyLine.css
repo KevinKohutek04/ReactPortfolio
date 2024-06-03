@@ -1,0 +1,7 @@
+.greyline {
+    width: 80%;
+    height: 1px; 
+    background-color: rgb(78, 86, 101); 
+    margin: 0 auto;
+    margin-bottom: 10px;
+}

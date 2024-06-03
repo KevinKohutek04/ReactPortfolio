@@ -7,6 +7,7 @@ import StoryBourd from './StoryBourd/StoryBourd';
 import JobBourd from './JobBourd/JobBourd.js';
 import Socials from './Socials/Socials.js';
 import ProjectBourd from './ProjectBourd/ProjectBourd.js';
+import GreyLine from '../Utility/GreyLine.js';
 
 const FrontPage = () => {
   return (
@@ -20,12 +21,13 @@ const FrontPage = () => {
       </div>
       <div className='RightBox'>
         <StoryBourd />
+        <GreyLine/>
         <JobBourd />
+        <GreyLine />
         <ProjectBourd />
-        <Spacer amount={1} />
+        <Spacer amount={2} />
       </div>
     </div>
   );
 };
-//edit 23 to 11
 export default FrontPage;

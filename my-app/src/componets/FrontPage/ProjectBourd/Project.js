@@ -10,7 +10,7 @@ const Project = ({ image, title, subtext, topic, link }) => {
         <a href={link} target="_blank" rel="noopener noreferrer" className="ProjectLink">
             <div className="Project">
                 <div className="LeftProject">
-                    <img src={imagePath} alt={title} />
+                    <img src={imagePath} alt={title} className='ProjectImg'/>
                 </div>
                 <div className="RightProject">
                     <p className="TextCap" style={{ fontWeight: 'bold' }}>{title}
@@ -29,8 +29,4 @@ const Project = ({ image, title, subtext, topic, link }) => {
 };
 
 export default Project;
-
-//{title}<img src={arrow} alt="arrow icon" className="ArrowIcon" />
-//{typeArray.map((type, index) => (
-//    <div key={index} className="TypeCircle">{type}</div>
-//))}
+//descriptionp     
