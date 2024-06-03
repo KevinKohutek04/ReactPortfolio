@@ -1,7 +1,7 @@
 import React from "react";
 import './Project.css';
 
-const ProjectBourd = () => {
+const ProjectBourd = (image, title, subtext, topic) => {
     return (
         <div className="Project">
             
