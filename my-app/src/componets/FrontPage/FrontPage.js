@@ -20,8 +20,8 @@ const FrontPage = () => {
       </div>
       <div className='RightBox'>
         <StoryBourd />
-        <ProjectBourd />
         <JobBourd />
+        <ProjectBourd />
         <Spacer amount={1} />
       </div>
     </div>

@@ -5,8 +5,7 @@ import Project from './Project.js';
 const ProjectBourd = () => {
     return (
        <div className="ProjectBourd">
-            <Project image='me' title='project' subtext='awetaaewf asg aberb serb esrb serb ser  brebewg wg w34g wer' topic='hmtl java javascript'/>
-            <Project image='he' title='project full stack' subtext='awetaaewfwaf waf afwfawafw   asg aberb serb esrbwadawdw  serb ser  brebewg wg w34g wer' topic='java spring boot  jwt'/>
+            <Project image='project1' title='JWT Quick Start' subtext='A simple jwt spring boot guide that explains how to setup and start a jwt protected project' topic='Spring Boot JWT Java' link='https://github.com/KevinKohutek04/JWT_STARTER/blob/main/README.md'/>
        </div>
     );
 };

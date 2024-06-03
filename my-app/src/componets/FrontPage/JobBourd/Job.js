@@ -27,5 +27,3 @@ const Job = ({ link, types, title, subtext, date }) => {
 };
 
 export default Job;
-
-//<Job link="google.com" types="java css html" title="enginerr wqaf awfd" subtext="awr  rwar ar awr awrwar awrowa rawntina l etletel eltkewtlkewntl knwe wp tnweptgnkg wegkknwepwe ntloewnt pewkn tpoewn t" date="2022 - present"/>

@@ -19,8 +19,7 @@ body, html {
     
     transition: width 0.3s ease, height 0.3s ease;
 
-    z-index: 9999;
+    z-index: 9988;
   pointer-events: none;
   mix-blend-mode: difference   ; 
   }
-  

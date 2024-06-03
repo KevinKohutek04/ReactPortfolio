@@ -9,8 +9,12 @@
     position: relative;
     padding-bottom: 15px;
 }
+.ProjectLink {
+    text-decoration: none;
+    color: inherit;
+}
 .LeftProject {
-    width: 30%;
+    width: 20%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -19,5 +23,16 @@
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+    position: relative;
+}
+img.no-blur {
+    filter: none !important;
+    transition: none !important;
 }

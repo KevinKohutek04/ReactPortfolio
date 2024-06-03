@@ -1,13 +1,36 @@
-import React from "react";
+import React from 'react';
 import './Project.css';
+import arrow from '../../assets/logo/arrow.png';
 
-const ProjectBourd = (image, title, subtext, topic) => {
+const Project = ({ image, title, subtext, topic, link }) => {
+    const imagePath = require(`../../assets/img/${image}.png`);
+    const topicArray = topic.split(' ');
+
     return (
-        <div className="Project">
-            
-        </div>
+        <a href={link} target="_blank" rel="noopener noreferrer" className="ProjectLink">
+            <div className="Project">
+                <div className="LeftProject">
+                    <img src={imagePath} alt={title} />
+                </div>
+                <div className="RightProject">
+                    <p className="TextCap" style={{ fontWeight: 'bold' }}>{title}
+                        <img src={arrow} alt="arrow icon" className="ArrowIcon" />
+                    </p> 
+                    <div className="TextSub">{subtext}</div>
+                    <div className="TypesContainer">
+                        {topicArray.map((topic, index) => (
+                            <div key={index} className="TypeCircle">{topic}</div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </a>
     );
 };
 
-export default ProjectBourd;
-//image='me' title='project' subtext='awetaaewf asg aberb serb esrb serb ser  brebewg wg w34g wer' topic='hmtl java javascript'
+export default Project;
+
+//{title}<img src={arrow} alt="arrow icon" className="ArrowIcon" />
+//{typeArray.map((type, index) => (
+//    <div key={index} className="TypeCircle">{type}</div>
+//))}
