@@ -6,6 +6,7 @@ import NamePlate from './NamePlate/NamePlate';
 import StoryBourd from './StoryBourd/StoryBourd';
 import JobBourd from './JobBourd/JobBourd.js';
 import Socials from './Socials/Socials.js';
+import ProjectBourd from './ProjectBourd/ProjectBourd.js';
 
 const FrontPage = () => {
   return (
@@ -19,6 +20,7 @@ const FrontPage = () => {
       </div>
       <div className='RightBox'>
         <StoryBourd />
+        <ProjectBourd />
         <JobBourd />
         <Spacer amount={1} />
       </div>

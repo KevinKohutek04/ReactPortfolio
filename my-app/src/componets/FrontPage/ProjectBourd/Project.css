@@ -1,0 +1,23 @@
+.Project {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start; /* puts items to the top */
+    padding-top: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+    padding-bottom: 15px;
+}
+.LeftProject {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.RightProject {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
