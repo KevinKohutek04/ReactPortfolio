@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FrontPage from './componets/FrontPage/FrontPage.js';
 
 function AppRouter() {
+  document.title = 'Kevin Kohutek';
+
   return (
     <Router>
       <Routes>
