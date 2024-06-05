@@ -7,7 +7,7 @@ const NamePlate = () => {
         
         <p className="title">Kevin Kohutek</p>
         <p className="subtitle">Full Stack Engineer</p>
-        <p className="description">I build robust accessible software,<br /> and digital experiences.</p>
+        <p className="description">I build high-quality Java microservices,<br /> and incredible UI/UX designs.</p>
       </div>
     );
   };

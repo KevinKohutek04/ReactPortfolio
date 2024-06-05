@@ -17,7 +17,7 @@ const FrontPage = () => {
         
         <NamePlate />
         <Socials />
-        <Spacer amount={-6} />
+        <Spacer amount={-3.5} />
       </div>
       <div className='RightBox'>
         <StoryBourd />
@@ -26,8 +26,11 @@ const FrontPage = () => {
         <GreyLine />
         <ProjectBourd />
         <Spacer amount={2} />
+        
       </div>
     </div>
   );
 };
+
 export default FrontPage;
+//<p className='descriptionpp'>Coded in Visual Studio using React.</p>
