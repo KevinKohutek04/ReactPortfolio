@@ -30,9 +30,9 @@ const ScrollTracker = ({ scrollTop, containerHeight }) => {
   return (
     <div className='ScrollTracker'>
       <div className='section-list'>
-        <div className={`section-item ${activeSection === 'about' ? 'active' : ''}`}>About</div>
-        <div className={`section-item ${activeSection === 'experiences' ? 'active' : ''}`}>Experiences</div>
-        <div className={`section-item ${activeSection === 'projects' ? 'active' : ''}`}>Projects</div>
+        <a href="#about"><div className={`section-item ${activeSection === 'about' ? 'active' : ''}`}>About</div></a>
+        <a href="#experience"><div className={`section-item ${activeSection === 'experiences' ? 'active' : ''}`}>Experiences</div></a>
+        <a href="#projects"><div className={`section-item ${activeSection === 'projects' ? 'active' : ''}`}>Projects</div></a>
       </div>
     </div>
   );

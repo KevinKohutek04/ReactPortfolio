@@ -63,5 +63,4 @@ const FrontPage = () => {
 };
 
 export default FrontPage;
-
 //<p className='descriptionpp'>Coded in Visual Studio using React.</p>

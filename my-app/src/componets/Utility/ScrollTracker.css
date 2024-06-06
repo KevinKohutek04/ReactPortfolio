@@ -11,6 +11,7 @@
   }
   
   .section-item {
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -33,4 +34,6 @@
   .scroll-position {
     margin-top: 20px;
   }
-  
+  .section-list a {
+    text-decoration: none;
+  }
