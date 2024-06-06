@@ -1,37 +1,41 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import './ScrollTracker.css';
 
-const ScrollTracker = ({ scrollTop }) => {
-  const [position, setPosition] = useState(0);
+const ScrollTracker = ({ scrollTop, containerHeight }) => {
+  const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
-    setPosition(scrollTop);
-  }, [scrollTop]);
+    console.log(`Current scrollTop: ${scrollTop}`);
+    console.log(`Container height: ${containerHeight}`);
+
+    if (containerHeight > 0) {
+      const scrollFraction = scrollTop / containerHeight;
+      console.log(`Scroll fraction: ${scrollFraction}`);
+
+      if (scrollFraction < 1 / 3) {
+        setActiveSection('about');
+        console.log('Active section: about');
+      } else if (scrollFraction < 2 / 3) {
+        setActiveSection('experiences');
+        console.log('Active section: experiences');
+      } else {
+        setActiveSection('projects');
+        console.log('Active section: projects');
+      }
+    } else {
+      console.log('Container height is not set correctly');
+    }
+  }, [scrollTop, containerHeight]);
 
   return (
-    <div>
-      
-      Scroll Position: {position}
+    <div className='ScrollTracker'>
+      <div className='section-list'>
+        <div className={`section-item ${activeSection === 'about' ? 'active' : ''}`}>About</div>
+        <div className={`section-item ${activeSection === 'experiences' ? 'active' : ''}`}>Experiences</div>
+        <div className={`section-item ${activeSection === 'projects' ? 'active' : ''}`}>Projects</div>
+      </div>
     </div>
   );
 };
 
 export default ScrollTracker;
-
-
-/*import './ScrollTracker.css';
-
-const ScrollTracker = () => {
-  return (
-    <div className='ScrollTracker'>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-      </nav>
-    </div>
-  );
-};
-
-export default ScrollTracker;*/

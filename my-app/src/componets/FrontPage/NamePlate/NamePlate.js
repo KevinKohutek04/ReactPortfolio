@@ -1,6 +1,5 @@
 import React from "react";
 import "./NamePlate.css";
-import ScrollTracker from "../../Utility/ScrollTracker";
 
 const NamePlate = () => {
     return (
@@ -10,7 +9,7 @@ const NamePlate = () => {
         <p className="subtitle">Full Stack Engineer</p>
         <p className="description">I build high-quality Java microservices,<br /> and incredible UI/UX designs.</p>
       
-        <ScrollTracker />
+
       </div>
     );
   };

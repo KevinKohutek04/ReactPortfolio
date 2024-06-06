@@ -26,7 +26,7 @@ body, html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-sizing: border-box;
   background-color: rgb(15, 23, 42);
   padding: 20px;

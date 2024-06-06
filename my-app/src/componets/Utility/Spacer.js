@@ -4,7 +4,7 @@ const Spacer = ({ amount }) => {
   return (
     <div
       className="Space"
-      style={{ marginBottom: `${amount * 50}px` }}
+      style={{ marginBottom: `${amount * 5}%` }}
     ></div>
   );
 };
