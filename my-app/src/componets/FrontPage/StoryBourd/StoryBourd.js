@@ -4,7 +4,7 @@ import Spacer from "../../Utility/Spacer";
 
 const StoryBourd = () => {
     return (
-      <div className='StoryBourd'>
+      <div className='StoryBourd' id="about">
         <Spacer amount={1.4}/>
         <p className="descriptionp">
             Back in 2019, I decided to dive into the world of coding, driven by a curiosity and passion for technology.

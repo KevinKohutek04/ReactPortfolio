@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './FrontPage.css';
 import CursorEffect from '../Cursor/CursorEffect';
 import Spacer from '../Utility/Spacer';
@@ -8,8 +8,30 @@ import JobBourd from './JobBourd/JobBourd.js';
 import Socials from './Socials/Socials.js';
 import ProjectBourd from './ProjectBourd/ProjectBourd.js';
 import GreyLine from '../Utility/GreyLine.js';
+import ScrollTracker from '../Utility/ScrollTracker.js';
 
 const FrontPage = () => {
+  const rightBoxRef = useRef(null);
+  const [scrollTop, setScrollTop] = useState(0);
+
+  const handleScroll = () => {
+    if (rightBoxRef.current) {
+      console.log('Scroll event triggered'); // Debugging line
+      setScrollTop(rightBoxRef.current.scrollTop);
+      console.log('Current scrollTop:', rightBoxRef.current.scrollTop);
+    }
+  };
+
+  useEffect(() => {
+    const rightBox = rightBoxRef.current;
+    if (rightBox) {
+      rightBox.addEventListener('scroll', handleScroll);
+      return () => {
+        rightBox.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, []);
+  
   return (
     <div className='MainBox'>
       <CursorEffect />
@@ -19,7 +41,8 @@ const FrontPage = () => {
         <Socials />
         <Spacer amount={-3.5} />
       </div>
-      <div className='RightBox'>
+      <div className='RightBox' ref={rightBoxRef}>
+      <ScrollTracker scrollTop={scrollTop} />
         <StoryBourd />
         <GreyLine/>
         <JobBourd />
