@@ -26,10 +26,3 @@ const StoryBourd = () => {
   };
   
   export default StoryBourd;
-
-  /*
-  Fast-forward to today, where I've been fortunate to work on a variety of projects. Each project has been a 
-            stepping stone, helping me refine my skills and broaden my understanding of the field. I'm always eager to 
-            learn and experiment with new technologies, staying up-to-date with the latest trends and advancements.
-            <br/><br/>
-  */
