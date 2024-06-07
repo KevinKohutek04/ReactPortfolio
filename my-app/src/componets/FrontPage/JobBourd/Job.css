@@ -52,9 +52,11 @@
 }
 
 .TextSub {
+    margin-top: 10px;
     color: rgb(141, 159, 185);
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 .ArrowIcon {
     margin-left: 10px;
@@ -83,4 +85,7 @@
 }
 .JobBox:hover .TypeCircle {
     background-color: rgb(10, 35, 54);
+}
+.no-style-link2 {
+    text-decoration: none;
 }
