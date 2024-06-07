@@ -5,35 +5,40 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /*opacity: .8;*/
     font-family: 'Roboto', sans-serif;
 }
+
 .titlep {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: -15px;
-  }
+}
   
-  .subtitlep {
+.subtitlep {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
-  }
+}
   
-  .descriptionp {
+.descriptionp {
     color: rgb(141, 159, 185);
     font-size: 17px;
     font-weight: 100;
     line-height: 1.6;
     margin-bottom: 20px;
-  }
-  .no-style-link {
+}
+
+.no-style-link {
     text-decoration: none;
     color: inherit;
     color: rgb(219, 225, 234);
     font-weight: 900;
     transition: filter 0.3s ease;
 }
+
 .no-style-link:hover {
-  filter: brightness(1.5);
+    filter: brightness(1.5);
+}
+.TrooperPooper:hover {
+    cursor: url("../../assets/img/image.png"), auto;
 }

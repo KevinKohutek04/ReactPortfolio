@@ -19,23 +19,23 @@ const FrontPage = () => {
     if (rightBoxRef.current) {
       const currentScrollTop = rightBoxRef.current.scrollTop;
       setScrollTop(currentScrollTop);
-      console.log(`Current scrollTop: ${currentScrollTop}`);
+     // console.log(`Current scrollTop: ${currentScrollTop}`);
     }
   };
 
   useEffect(() => {
     const rightBox = rightBoxRef.current;
     if (rightBox) {
-      console.log('Adding scroll event listener');
+      //console.log('Adding scroll event listener');
       rightBox.addEventListener('scroll', handleScroll);
 
       // Calculate container height and set it
       const calculatedHeight = rightBox.scrollHeight - rightBox.clientHeight;
       setContainerHeight(calculatedHeight);
-      console.log(`Container height: ${calculatedHeight}`);
+      //console.log(`Container height: ${calculatedHeight}`);
 
       return () => {
-        console.log('Removing scroll event listener');
+        //console.log('Removing scroll event listener');
         rightBox.removeEventListener('scroll', handleScroll);
       };
     }

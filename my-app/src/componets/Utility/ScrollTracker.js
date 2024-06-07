@@ -5,25 +5,25 @@ const ScrollTracker = ({ scrollTop, containerHeight }) => {
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
-    console.log(`Current scrollTop: ${scrollTop}`);
-    console.log(`Container height: ${containerHeight}`);
+  //  console.log(`Current scrollTop: ${scrollTop}`);
+   // console.log(`Container height: ${containerHeight}`);
 
     if (containerHeight > 0) {
       const scrollFraction = scrollTop / containerHeight;
-      console.log(`Scroll fraction: ${scrollFraction}`);
+    //  console.log(`Scroll fraction: ${scrollFraction}`);
 
       if (scrollFraction < 1 / 3) {
         setActiveSection('about');
-        console.log('Active section: about');
+      //  console.log('Active section: about');
       } else if (scrollFraction < 2 / 3) {
         setActiveSection('experiences');
-        console.log('Active section: experiences');
+       // console.log('Active section: experiences');
       } else {
         setActiveSection('projects');
-        console.log('Active section: projects');
+        //console.log('Active section: projects');
       }
     } else {
-      console.log('Container height is not set correctly');
+      //console.log('Container height is not set correctly');
     }
   }, [scrollTop, containerHeight]);
 
