@@ -18,6 +18,7 @@ const FrontPage = () => {
   const handleScroll = () => {
     if (rightBoxRef.current) {
       const currentScrollTop = rightBoxRef.current.scrollTop;
+      console.log('Scroll Top:', currentScrollTop); // Debugging log
       setScrollTop(currentScrollTop);
     }
   };
@@ -26,7 +27,12 @@ const FrontPage = () => {
     const rightBox = rightBoxRef.current;
     if (rightBox) {
       rightBox.addEventListener('scroll', handleScroll);
-      const calculatedHeight = rightBox.scrollHeight - rightBox.clientHeight;
+      const scrollHeight = rightBox.scrollHeight;
+      const clientHeight = rightBox.clientHeight;
+      const calculatedHeight = scrollHeight - clientHeight;
+      console.log('Scroll Height:', scrollHeight); // Debugging log
+      console.log('Client Height:', clientHeight); // Debugging log
+      console.log('Calculated Container Height:', calculatedHeight); // Debugging log
       setContainerHeight(calculatedHeight);
       return () => {
         rightBox.removeEventListener('scroll', handleScroll);
