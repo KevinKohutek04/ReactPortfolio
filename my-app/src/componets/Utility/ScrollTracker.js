@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './ScrollTracker.css';
 
-const ScrollTracker = ({ scrollTop, containerHeight }) => {
+const ScrollTracker = ({ scrollTop, documentHeight }) => {
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
-    if (containerHeight > 0) {
-      const scrollFraction = scrollTop / containerHeight;
+    if (documentHeight > 0) {
+      const scrollFraction = scrollTop / documentHeight;
       if (scrollFraction < 1 / 3) {
         setActiveSection('about');
       } else if (scrollFraction < 2 / 3) {
@@ -15,7 +15,7 @@ const ScrollTracker = ({ scrollTop, containerHeight }) => {
         setActiveSection('projects');
       }
     }
-  }, [scrollTop, containerHeight]);
+  }, [scrollTop, documentHeight]);
 
   const handleSmoothScroll = (e, id) => {
     e.preventDefault();

@@ -1,39 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 .ScrollTracker {
-    width: 100%;
-  }
-  
-  .section-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .section-item {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 10px 20px;
-    color: rgb(219, 225, 234);
-    border-radius: 5px;
-    width: fit-content;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .section-item.active {
-    background-color: rgba(0, 255, 255, 0.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 14px;
-    font-weight: 300;
-    transform: scale(1.1);
-    transform: translateX(30px) scale(1.1); 
-  }
-  
-  .scroll-position {
-    margin-top: 20px;
-  }
-  .section-list a {
-    text-decoration: none;
-  }
+  width: 100%;
+}
+
+.section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-item {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 20px;
+  color: rgb(219, 225, 234);
+  border-radius: 5px;
+  width: fit-content;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.section-item.active {
+  background-color: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: 300;
+  transform: translateX(30px) scale(1.1); 
+}
+
+.scroll-position {
+  margin-top: 20px;
+}
+
+.section-list a {
+  text-decoration: none;
+}
