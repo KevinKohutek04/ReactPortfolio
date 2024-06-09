@@ -28,18 +28,19 @@ const ScrollTracker = ({ scrollTop, documentHeight }) => {
   return (
     <div className='ScrollTracker'>
       <div className='section-list'>
-        <a href="#about" onClick={(e) => handleSmoothScroll(e, 'about')}>
-          <div className={`section-item ${activeSection === 'about' ? 'active' : ''}`}>About</div>
+        <a href="#about" onClick={(e) => handleSmoothScroll(e, 'about')} className={`section-item ${activeSection === 'about' ? 'active' : ''}`}>
+          About
         </a>
-        <a href="#experiences" onClick={(e) => handleSmoothScroll(e, 'experiences')}>
-          <div className={`section-item ${activeSection === 'experiences' ? 'active' : ''}`}>Experiences</div>
+        <a href="#experiences" onClick={(e) => handleSmoothScroll(e, 'experiences')} className={`section-item ${activeSection === 'experiences' ? 'active' : ''}`}>
+          Experiences
         </a>
-        <a href="#projects" onClick={(e) => handleSmoothScroll(e, 'projects')}>
-          <div className={`section-item ${activeSection === 'projects' ? 'active' : ''}`}>Projects</div>
+        <a href="#projects" onClick={(e) => handleSmoothScroll(e, 'projects')} className={`section-item ${activeSection === 'projects' ? 'active' : ''}`}>
+          Projects
         </a>
       </div>
     </div>
   );
 };
+
 
 export default ScrollTracker;
