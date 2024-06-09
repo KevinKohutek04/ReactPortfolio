@@ -8,6 +8,7 @@
 }
 
 .social-icon {
+    pointer-events:auto;
     height: 25px;
     width: auto; 
     margin: 0 20px;
