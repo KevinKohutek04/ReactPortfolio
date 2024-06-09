@@ -40,5 +40,6 @@
     filter: brightness(1.5);
 }
 .TrooperPooper:hover {
+    filter: brightness(1.5);
     cursor: url("../../assets/img/image.png"), auto;
 }

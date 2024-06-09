@@ -4,7 +4,7 @@ import Job from "./Job";
 
 const JobBourd = () => {
     return (
-      <div className="JobBourd" id="experience">
+      <div className="JobBourd" id="experiences">
         <Job link="https://homedepot.com" types="Java SpringBoot MySQL JWT" title="Entry Software Engineer" 
         subtext="&nbsp;Built and maintained components across Home Depot servers, allowing associates to easily and securely access the server through protected API endpoints. 
         Worked closely with other developers to roll out new software and major changes, resulting in a significantly improved system for tracking items and tools, 
