@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+::-moz-selection{
+  background: #eee;
+}
+::selection{
+  background: #eee;
+}
+
+
+
 body, html {
   scroll-behavior: smooth;
   margin: 0;

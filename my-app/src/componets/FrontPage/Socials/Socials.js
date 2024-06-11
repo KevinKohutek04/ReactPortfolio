@@ -20,7 +20,7 @@ const Socials = () => {
     return (
         <div className="Social-box">
             {notification && <Notification message={notification} onClose={() => setNotification('')} />}
-            <a href="https://github.com/KevinKohutek04/ReactPortfolio" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/KevinKohutek04/ReactPortfolio/tree/main/my-app" target="_blank" rel="noopener noreferrer">
                 <img src={code} alt="Code" className="social-icon" />
             </a>
             <a href="https://github.com/KevinKohutek04" target="_blank" rel="noopener noreferrer">
