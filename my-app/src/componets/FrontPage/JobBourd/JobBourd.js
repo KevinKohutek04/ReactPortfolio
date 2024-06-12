@@ -12,10 +12,10 @@ const JobBourd = () => {
       />
 
         <Job link="https://homedepot.com" types="SpringBoot Java" title="Home Depot Intership Program" subtext={<span>I spent my time learning about the modern production life cycle,
-           hand ow the code is deployed across all of the stores servers, and the different roles within a development team work and what there tasks are this was a incredbile experince to have.</span>} date="2022 - 2022" />
+           and how the code is deployed across all of the stores servers, and the different roles within a development team work and what there tasks are this was a incredbile experince to have.</span>} date="2022 - 2022" />
         
 
-        <a href="/Resume_edited.pdf" target="_blank" rel="noopener noreferrer" className="TextCapp">
+        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="TextCapp">
         View Resume
       </a>
         
