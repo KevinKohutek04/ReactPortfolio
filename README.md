@@ -18,7 +18,6 @@ This is an example of how I would create one of the boxes for the job.
 I made the cursor effect by tracking the cursor using JavaScript and then placing a circle with a gradient around it to give it a cool look. I also had to change the z-index on the root CSS component so the circle could be in front of the entire website, giving it its effect where it changes the text color.
 
 background: radial-gradient(circle, rgba(65, 105, 225, 0.12) 0%, rgba(65, 105, 225, 0.05) 40%, rgba(65, 105, 225, 0.01) 70%, rgba(65, 105, 225, 0.005) 100%);
-
 (the fourth number is the opacity)
 
 
