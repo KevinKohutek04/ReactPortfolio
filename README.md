@@ -26,3 +26,4 @@ background: radial-gradient(circle, rgba(65, 105, 225, 0.12) 0%, rgba(65, 105, 2
 # Conclusion
 
 This project is a great stepping stone in learning how to make clean and responsive UIs. Hopefully, someone will see my code and base their portfolio around it!
+
