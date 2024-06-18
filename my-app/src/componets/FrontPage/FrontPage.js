@@ -39,8 +39,10 @@ const FrontPage = () => {
       <CursorEffect />
       <div className='LeftBox'>
         <NamePlate />
-        <ScrollTracker scrollTop={scrollTop} documentHeight={documentHeight} />
-        <Spacer amount={24} />
+        <div className='HidesInSmall'>
+          <ScrollTracker scrollTop={scrollTop} documentHeight={documentHeight} />
+          <Spacer amount={24} />
+        </div>
         <Socials />
       </div>
       <div className='RightBox'>
