@@ -5,7 +5,7 @@ const NamePlate = () => {
     return (
       <div className='NamePlateBox'>
         
-        <p className="title">Kevin Kohutek</p>
+        <p className="title">Henry James</p>
         <p className="subtitle">Full Stack Engineer</p>
         <p className="description">I build Java microservices using Spring Boot,<br /> and incredible UI/UX designs.</p>
       

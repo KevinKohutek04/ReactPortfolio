@@ -20,7 +20,7 @@ body, html {
 
 .MainBox {
   display: flex;
-  background-color: rgb(15, 23, 42);
+  background-color: rgb(9, 11, 15);
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
